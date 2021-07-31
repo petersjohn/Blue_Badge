@@ -89,3 +89,4 @@ C:\Users\johnp\Documents\ElevenFiftyProjects\BlueBadgeProjects\Restaurant_Rater\
 C:\Users\johnp\Documents\ElevenFiftyProjects\BlueBadgeProjects\Restaurant_Rater\RestaurantRater\RestaurantRater\bin\EntityFramework.SqlServer.xml
 C:\Users\johnp\Documents\ElevenFiftyProjects\BlueBadgeProjects\Restaurant_Rater\RestaurantRater\RestaurantRater\obj\Debug\RestaurantRater.Migrations.initialmigration.resources
 C:\Users\johnp\Documents\ElevenFiftyProjects\BlueBadgeProjects\Restaurant_Rater\RestaurantRater\RestaurantRater\obj\Debug\RestaurantRater.csproj.GenerateResource.cache
+C:\Users\johnp\Documents\ElevenFiftyProjects\BlueBadgeProjects\Restaurant_Rater\RestaurantRater\RestaurantRater\obj\Debug\RestaurantRater.Migrations.AddedRatings.resources

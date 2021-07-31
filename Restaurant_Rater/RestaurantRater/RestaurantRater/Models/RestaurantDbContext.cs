@@ -14,6 +14,6 @@ namespace RestaurantRater.Models
         }
 
         public DbSet<Restaurant> Restaurants { get; set; } //we are creating a DB "table" called restaurants
-
+        public DbSet<Rating> Ratings { get; set; } //creating the table for the ratings.
     }
 }

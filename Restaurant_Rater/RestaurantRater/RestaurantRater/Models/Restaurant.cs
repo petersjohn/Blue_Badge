@@ -18,8 +18,31 @@ namespace RestaurantRater.Models
         [Required]
         public string Address { get; set; }
 
-        [Required]
-        public double Rating { get; set; }
+        public virtual List<Rating> Ratings { get; set; } = new List<Rating>();
+        public double Rating
+        {
+            get
+            {
+                double totalAvgRating = 0;
+
+                foreach(var rating in Ratings)
+                {
+                    totalAvgRating += rating.AvgRating;
+                }
+
+                return Ratings.Count > 0 ? Math.Round(totalAvgRating / Ratings.Count,2) : 0;
+
+
+            }
+        }
+        
+        public bool IsRecommended
+        {
+            get
+            {
+                return Rating >= 8;
+            }
+        }
 
     }
 }

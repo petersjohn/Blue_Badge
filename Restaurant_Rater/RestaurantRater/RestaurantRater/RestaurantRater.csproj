@@ -172,7 +172,12 @@
     <Compile Include="Migrations\202107300118439_initialmigration.designer.cs">
       <DependentUpon>202107300118439_initialmigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107310558576_AddedRatings.cs" />
+    <Compile Include="Migrations\202107310558576_AddedRatings.designer.cs">
+      <DependentUpon>202107310558576_AddedRatings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Rating.cs" />
     <Compile Include="Models\Restaurant.cs" />
     <Compile Include="Models\RestaurantDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -263,6 +268,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202107300118439_initialmigration.resx">
       <DependentUpon>202107300118439_initialmigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107310558576_AddedRatings.resx">
+      <DependentUpon>202107310558576_AddedRatings.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

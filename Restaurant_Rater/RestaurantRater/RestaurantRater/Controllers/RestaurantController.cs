@@ -90,5 +90,22 @@ namespace RestaurantRater.Controllers
             await _context.SaveChangesAsync();
             return Ok("Update successful!");
         }
+
+        [HttpDelete]
+
+        public async Task<IHttpActionResult> DeleteRestaurant([FromUri] int id)
+        {
+            Restaurant restaurant = await _context.Restaurants.FindAsync(id);
+            if (restaurant is null)
+                return NotFound();
+
+            _context.Restaurants.Remove(restaurant);
+
+            if(await _context.SaveChangesAsync() == 1)
+            {
+                return Ok("The restaurant was deleted.");
+            }
+            return InternalServerError();
+        }
     }
 }
